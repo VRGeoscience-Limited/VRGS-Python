@@ -1,9 +1,6 @@
 # VRGS Python Integration
 
-<div style="text-align: center;">
-
-![VRGS + Python](/assets/images/VRGeoscience_plus_python_v1.png)
-</div>
+<img style="float: center;" src="https://github.com/VRGeoscience-Limited/VRGS-Python-Scripts/blob/main/assets/images/VRGeoscience_plus_python_v1.png">
 
 This repository contains python code and scripts that can be integrated directly _within_ [Virtual Reality Geological Studio](https://www.vrgeoscience.com/). The aim is to leverage the extensive and expanding ecosystem of earth science specific python packages. The goal is to facilitate advanced 3D outcrop analysis by incorporating python into and complementing current **VRGS** workflows.  
 

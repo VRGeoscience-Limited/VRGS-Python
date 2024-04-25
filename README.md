@@ -30,7 +30,7 @@ The following steps set up the python script development environment in **VRGS**
 
 3. Import necessary packages and write the awesome python script.
 
-4. :floppy_disk: `Save script` to write python file to project directory. 
+4. Click :floppy_disk: `Save script` to write python file to project directory. 
 
 5. To run the script, click the :arrow_forward: `Run` command.
     - :exclamation: **Top Tip** - open a `Python Output` console window to view any data output from the `print()` method, or any errors that may occur.

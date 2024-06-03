@@ -129,44 +129,42 @@ def data_selected():
     if combo_drop_menu1.get() == "Joint" and combo_drop_menu2.get() == "Stereonet (with KMeans)":
         print("You've chosen Joint and Stereonet (with KMeans)")
         strike, dip, centres = orientation_analysis(df, joint=True) # set joint to True to analyse joint data
-        #update_progress(2, total_steps)  # Step 2: Data Analyzed
+        update_progress(2, total_steps)  # update progress bar
         stereonet_plot(strike, dip, centres, joint=True, kmeans=True) # add the returned array components from orientation_analysis() as function args
         
 
     elif combo_drop_menu1.get() == "Joint" and combo_drop_menu2.get() == "Rose Diagram":
         print("You've chosen Joint and Rose Diagram")
         strike, dip, centres = orientation_analysis(df, joint=True) # set joint to True to analyse joint data
-        update_progress(2, total_steps)  # Step 2: Data Analyzed
+        update_progress(2, total_steps)  
         rose_plot(strike, joint=True)
-        update_progress(2, total_steps)  # Step 3: Plot Generated
     
     elif combo_drop_menu1.get() == "Bedding" and combo_drop_menu2.get() == "Stereonet (with KMeans)":
         print("You've chosen Bedding and Stereonet (with KMeans)")
         strike, dip, centres = orientation_analysis(df, bedding=True) # set joint to True to analyse joint data
-        update_progress(2, total_steps)  # Step 2: Data Analyzed
+        update_progress(2, total_steps)  # update progress bar
         stereonet_plot(strike, dip, centres, bedding=True, kmeans=True) # add the returned array components from orientation_analysis() as function args
         
     elif combo_drop_menu1.get() == "Bedding" and combo_drop_menu2.get() == "Rose Diagram":
         print("You've chosen Joint and Rose Diagram")
         strike, dip, centres = orientation_analysis(df, bedding=True) # set joint to True to analyse joint data
-        update_progress(2, total_steps)  # Step 2: Data Analyzed
+        update_progress(2, total_steps)  # update progress bar
         rose_plot(strike, bedding=True)
         
-
     elif combo_drop_menu1.get() == "Joint" and combo_drop_menu2.get() == "Northern Hemisphere Rose Diagram":
         print("You've chosen Joint and Northern Hemisphere Rose Diagram")
         strike, dip, centres = orientation_analysis(df, joint=True) # set joint to True to analyse joint data
-        update_progress(2, total_steps)  # Step 2: Data Analyzed
+        update_progress(2, total_steps)  # update progress bar
         rose_plot(strike, joint=True, hemisphere=True) 
         
 
     elif combo_drop_menu1.get() == "Bedding" and combo_drop_menu2.get() == "Northern Hemisphere Rose Diagram":
         print("You've chosen Joint and Northern Hemisphere Rose Diagram")
         strike, dip, centres = orientation_analysis(df, bedding=True) # set joint to True to analyse joint data
-        update_progress(2, total_steps)  # Step 2: Data Analyzed
+        update_progress(2, total_steps)  # update progress bar
         rose_plot(strike, bedding=True, hemisphere=True)
         
-    update_progress(5, total_steps)  # Step 4: Process Completed
+    update_progress(5, total_steps)  # Process Completed
 
 def orientation_analysis(df, bedding=False, joint=False):
     """
@@ -289,8 +287,8 @@ def rose_plot(strike, hemisphere=False, bedding=False, joint=False, fault=False,
         ax.set_title("Rose Diagram for Fault(s)", y=1.1)
 
 
-    update_progress(4, 5)  # Step 4: Plot Generated
-    update_progress(5, 5)  # Step 5: Process Completed
+    update_progress(4, 5)  # Plot Generated
+    update_progress(5, 5)  # Process Completed
     plt.show()
 
 def stereonet_plot(strike, dip, centres, bedding=False, joint=False, fault=False, kmeans=False):
@@ -380,8 +378,8 @@ def stereonet_plot(strike, dip, centres, bedding=False, joint=False, fault=False
         ax2.set_title("Density Contour of Fault Poles", y=1.1)
     
 
-    update_progress(4, 5)  # Step 4: Plot Generated
-    update_progress(5, 5)  # Step 5: Process Completed
+    update_progress(4, 5)  # Plot Generated
+    update_progress(5, 5)  # Process Completed
     plt.show()
 
 window.mainloop()

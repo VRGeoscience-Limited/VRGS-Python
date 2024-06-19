@@ -6,6 +6,8 @@ This repository contains python code and scripts that can be integrated directly
 
 This repository will be periodically updated with code and scripts. 
 
+[![DOI](https://zenodo.org/badge/657962506.svg)](https://zenodo.org/doi/10.5281/zenodo.12168785)
+
 ## Installation
 - Install python on your machine --version >= 3.10
     - Recommended to install from the main [python](https://www.python.org/downloads/) build.

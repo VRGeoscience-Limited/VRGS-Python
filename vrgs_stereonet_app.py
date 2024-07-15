@@ -14,7 +14,7 @@
 #
 # The MIT License (MIT)
 #
-# Copyright (c) 2024 David and Brian
+# Copyright (c) 2024 Brian and David
 #
 # Permission is hereby granted, free of charge, to any person obtaining 
 # a copy of this software and associated documentation files (the "Software"), 
